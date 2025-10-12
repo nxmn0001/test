@@ -2,35 +2,35 @@
 <html lang="id"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NIXY GAMING - Download &amp; Enjoy Games</title>
+    <title>MODORA - Download Aplikasi Premium &amp; Game Mod Apk</title>
     
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="icon.png" type="image/png">
     
-    <meta name="description" content="Temukan dan unduh ribuan game Android terbaru, aman, dan gratis di NIXY GAMING.">
-    <meta name="keywords" content="download game, apk android, game terbaru, NIXY GAMING">
-    <meta name="author" content="NIXY GAMING">
+    <meta name="description" content="Temukan dan unduh ribuan aplikasi premium unlocked dan game mod apk terbaru, aman, dan gratis di MODORA. Tempat Upload Aplikasi premium unlocked dan Game Mod Apk.">
+    <meta name="keywords" content="download aplikasi premium, game mod apk, apk unlocked, modora, aplikasi mod">
+    <meta name="author" content="MODORA">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nixygaming.my.id/">
-    <meta property="og:title" content="NIXY GAMING - Download &amp; Enjoy Games">
-    <meta property="og:description" content="Portal terbaik untuk mencari dan mengunduh game Android terbaru.">
-    <meta property="og:image" content="https://nixygaming.my.id/nixygaming.jpg">
+    <meta property="og:url" content="https://modora.my.id/">
+    <meta property="og:title" content="MODORA - Aplikasi Premium &amp; Game Mod Apk">
+    <meta property="og:description" content="Portal terbaik untuk mencari dan mengunduh aplikasi premium dan game mod apk terbaru.">
+    <meta property="og:image" content="https://modora.my.id/modora.jpg">
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://nixygaming.my.id/">
-    <meta property="twitter:title" content="NIXY GAMING - Download &amp; Enjoy Games">
-    <meta property="twitter:description" content="Portal terbaik untuk mencari dan mengunduh game Android terbaru.">
-    <meta property="twitter:image" content="https://nixygaming.my.id/nixygaming.jpg">
+    <meta property="twitter:url" content="https://modora.my.id/">
+    <meta property="twitter:title" content="MODORA - Aplikasi Premium &amp; Game Mod Apk">
+    <meta property="twitter:description" content="Portal terbaik untuk mencari dan mengunduh aplikasi premium dan game mod apk terbaru.">
+    <meta property="twitter:image" content="https://modora.my.id/modora.jpg">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "NIXY GAMING",
-      "url": "https://nixygaming.my.id/",
+      "name": "MODORA",
+      "url": "https://modora.my.id/",
       "potentialAction": {
         "@type": "SearchAction",
         "target": {
           "@type": "EntryPoint",
-          "urlTemplate": "https://nixygaming.my.id/?s={search_term_string}"
+          "urlTemplate": "https://modora.my.id/?s={search_term_string}"
         },
         "query-input": {
           "@type": "PropertyValueSpecification",
@@ -41,8 +41,7 @@
       "mainEntity": {
         "@type": "WebPage",
         "hasPart": [
-          {"@type": "SiteNavigationElement", "name": "Games", "url": "https://nixygaming.my.id/games/"},
-          {"@type": "SiteNavigationElement", "name": "Blog", "url": "https://nixygaming.my.id/blog/"}
+          {"@type": "SiteNavigationElement", "name": "Games", "url": "https://modora.my.id/games/"}
         ]
       }
     }
@@ -188,7 +187,6 @@
         .menu-grid-item i { font-size: 2em; }
         .menu-grid-item.home { background-color: var(--blue-color); }
         .menu-grid-item.games { background-color: var(--red-color); }
-        .menu-grid-item.blog { background-color: var(--yellow-color); color: white; }
         .menu-grid-item.faq { background-color: var(--teal-color); }
         .menu-grid-item.dark-mode { background-color: var(--orange-color); }
         .menu-grid-item.telegram-bg { background-color: #0088cc; }
@@ -307,8 +305,7 @@
             padding: 0;
             scroll-margin-top: 70px; 
         }
-        .app-list + .section-header,
-        .categories-wrapper + .footer-container {
+        .app-list + .section-header {
              margin-top: 50px;
         }
         .section-title-group {
@@ -436,77 +433,12 @@
             display: none;
         }
         
-        .blog-list {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        .blog-post-item {
-            background-color: var(--card-bg);
-            border-radius: 12px;
-            padding: 15px;
-            box-shadow: 0 4px 12px var(--shadow-color);
-            text-decoration: none;
-            color: var(--text-color);
-            font-weight: 600;
-            font-size: 1em;
-            transition: var(--transition-smooth);
-            display: block; 
-        }
-        .blog-post-item:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 16px var(--shadow-color);
-            color: var(--blue-color);
-        }
-
-        .blog-list:not(.show-all) .blog-post-item:nth-child(n + 6) {
-            display: none;
-        }
-
-        .blog-list.show-all .blog-post-item {
-            display: block !important;
-        }
-
-        .categories-wrapper {
-            background-color: var(--card-bg);
-            border-radius: 16px;
-            padding: 20px;
-            box-shadow: 0 4px 12px var(--shadow-color);
-            margin-top: 50px;
-        }
-        .category-grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
-            gap: 10px;
-        }
-        .category-button {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            padding: 8px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 0.8em;
-            font-weight: 500;
-            box-shadow: none;
-            border: 1px solid var(--border-color);
-            transition: var(--transition-smooth);
-            text-align: center;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .category-button:hover {
-            background-color: var(--blue-color);
-            color: white;
-            border-color: var(--blue-color);
-            transform: translateY(-2px);
-        }
-
         .footer-container {
             background-color: var(--card-bg);
             border-radius: 16px;
             padding: 20px;
             box-shadow: 0 4px 12px var(--shadow-color);
+            margin-top: 50px;
         }
         .footer-links-grid {
             display: grid;
@@ -585,7 +517,7 @@
 
     <header>
         <div class="header-logo">
-            <a href="/"><span class="logo-text"><span class="logo-nixy">NIXY</span><span class="logo-gaming">GAMING</span></span></a>
+            <a href="/"><span class="logo-text"><span class="logo-nixy">MOD</span><span class="logo-gaming">ORA</span></span></a>
         </div>
         <div class="header-right">
             <button id="header-dark-mode-toggle" class="header-btn" aria-label="Ganti Tema">
@@ -602,16 +534,15 @@
 
     <div id="menu-overlay" class="overlay">
         <div class="overlay-header">
-            <a href="/" style="text-decoration:none;"><span class="logo-text" style="font-size: 1.8em;"><span class="logo-nixy">NIXY</span><span class="logo-gaming">GAMING</span></span></a>
+            <a href="/" style="text-decoration:none;"><span class="logo-text" style="font-size: 1.8em;"><span class="logo-nixy">MOD</span><span class="logo-gaming">ORA</span></span></a>
             <button id="menu-close" class="overlay-close-btn" aria-label="Tutup Menu"><i class="fa-solid fa-times"></i></button>
         </div>
         <div class="menu-search-box">
-            <input type="search" id="menu-search-input" placeholder="Cari game...">
+            <input type="search" id="menu-search-input" placeholder="Cari aplikasi &amp; game...">
         </div>
         <div class="menu-grid">
             <a href="/" class="menu-grid-item home"><i class="fa-solid fa-home"></i><span>Home</span></a>
-            <a href="https://nixygaming.my.id/games/" class="menu-grid-item games"><i class="fa-solid fa-gamepad"></i><span>Games</span></a>
-            <a href="https://nixygaming.my.id/blog/" class="menu-grid-item blog"><i class="fa-solid fa-file-alt"></i><span>Blog</span></a>
+            <a href="https://modora.my.id/games/" class="menu-grid-item games"><i class="fa-solid fa-gamepad"></i><span>Games</span></a>
             <a href="/faq.html" class="menu-grid-item faq"><i class="fa fa-question-circle"></i><span>FAQ</span></a>
             <button id="dark-mode-toggle" class="menu-grid-item dark-mode">
                 <i class="fa-solid fa-sun"></i><span>Dark Mode</span>
@@ -627,15 +558,15 @@
         <div class="overlay-header">
             <div class="search-input-wrapper">
                 <i class="fa-solid fa-search"></i>
-                <input type="search" id="search-input" placeholder="Cari game dan lainnya">
+                <input type="search" id="search-input" placeholder="Cari aplikasi, game, dan lainnya">
             </div>
             <button id="search-close" class="overlay-close-btn" aria-label="Tutup Pencarian"><i class="fa-solid fa-times"></i></button>
         </div>
         <div class="search-content">
             <div id="overlay-search-results" class="app-list results-list"></div>
             <div id="overlay-no-results" style="display: none; text-align: center; padding: 20px;">
-                <p>Game yang kamu cari tidak ditemukan.</p>
-                <a href="request.html" class="request-btn">Request Game</a>
+                <p>Aplikasi/Game yang kamu cari tidak ditemukan.</p>
+                <a href="request.html" class="request-btn">Request Aplikasi/Game</a>
             </div>
         </div>
     </div>
@@ -661,38 +592,24 @@
                     <div class="section-header" id="games-section">
                         <div class="section-title-group">
                             <span class="section-icon"><i class="fa-solid fa-gamepad"></i></span>
-                            <h2>Updated Games</h2>
+                            <h2>Apps &amp; Games</h2>
                         </div>
                         <button class="view-all-btn">Lihat Semua</button>
                     </div>
-                    <div class="app-list" id="update-games-list"><a href="games/mobile-legends-mod-ap-v7292/" class="app-card" data-title="GAMES"><div class="card-image-container"><img src="https://nixygaming.my.id/games/mobile-legends-mod-ap-v7292/icon.jpg" alt="Mobile legends mod ap v7292"></div><div class="card-content"><div class="card-title-row"><h3>Mobile legends mod ap v7292</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v7292</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> MOBA</span></div></div></a><a href="games/free-fire-max-mod-v2992/" class="app-card" data-title="GAMES"><div class="card-image-container"><img src="https://nixygaming.my.id/games/free-fire-max-mod-v2992/icon.jpg" alt="Free fire max mod v2992"></div><div class="card-content"><div class="card-title-row"><h3>Free fire max mod v2992</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v2992</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Battle Royale</span></div></div></a><a href="games/volleyball-king-v1.2.9/" class="app-card" data-title="GAMES"><div class="card-image-container"><img src="https://nixygaming.my.id/games/volleyball-king-v1.2.9/icon.jpg" alt="VolleyBall King v1.2.9"></div><div class="card-content"><div class="card-title-row"><h3>VolleyBall King v1.2.9</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v1.2.9</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Sports</span></div></div></a><a href="games/free-fire-mod-menu-v829/" class="app-card" data-title="GAMES"><div class="card-image-container"><img src="https://nixygaming.my.id/games/free-fire-mod-menu-v829/icon.jpg" alt="Free fire mod menu v829"></div><div class="card-content"><div class="card-title-row"><h3>Free fire mod menu v829</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v829</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Action</span></div></div></a><a href="games/car-simulator-2/" class="app-card" data-title="GAMES"><div class="card-image-container"><img src="https://nixygaming.my.id/games/car-simulator-2/icon.jpg" alt="Car Simulator 2 v1.57.41 MOD APK"></div><div class="card-content"><div class="card-title-row"><h3>Car Simulator 2 v1.57.41 MOD APK</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v1.57.41</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Simulation</span></div></div></a><a href="games/volleyball-king/" class="app-card" data-title="GAMES"><div class="card-image-container"><img src="https://nixygaming.my.id/games/volleyball-king/icon.jpg" alt="VolleyBall King v1.2.9"></div><div class="card-content"><div class="card-title-row"><h3>VolleyBall King v1.2.9</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v1.2.9</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Sports</span></div></div></a><a href="games/volleyball-king-v129-2/" class="app-card" data-title="GAMES"><div class="card-image-container"><img src="https://nixygaming.my.id/games/volleyball-king-v129-2/icon.jpg" alt="VolleyBall King v1.2.9"></div><div class="card-content"><div class="card-title-row"><h3>VolleyBall King v1.2.9</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v1.2.9</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Simulation</span></div></div></a><a href="games/volleyball-king-v129-1/" class="app-card" data-title="GAMES"><div class="card-image-container"><img src="https://nixygaming.my.id/games/volleyball-king-v129-1/icon.jpg" alt="VolleyBall King v1.2.9"></div><div class="card-content"><div class="card-title-row"><h3>VolleyBall King v1.2.9</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v1.2.9</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Sports</span></div></div></a><a href="games/ff-v1/" class="app-card" data-title="GAMES"><div class="card-image-container"><img src="https://nixygaming.my.id/games/ff-v1/icon.jpg" alt="Ff v1"></div><div class="card-content"><div class="card-title-row"><h3>Ff v1</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v1</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> 1</span></div></div></a><a href="games/ff-mod-v67799/" class="app-card" data-title="GAMES"><div class="card-image-container"><img src="https://nixygaming.my.id/games/ff-mod-v67799/icon.jpg" alt="Ff mod v67799"></div><div class="card-content"><div class="card-title-row"><h3>Ff mod v67799</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v67799</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Rcac</span></div></div></a><a href="games/free-fire-v7999000/" class="app-card" data-title="GAMES"><div class="card-image-container"><img src="https://nixygaming.my.id/games/free-fire-v7999000/icon.jpg" alt="Free fire V7999000"></div><div class="card-content"><div class="card-title-row"><h3>Free fire V7999000</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> V7999000</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Br</span></div></div></a><a href="games/free-fire-v77990p/" class="app-card" data-title="GAMES"><div class="card-image-container"><img src="https://nixygaming.my.id/games/free-fire-v77990p/icon.jpg" alt="Free fire v77990p"></div><div class="card-content"><div class="card-title-row"><h3>Free fire v77990p</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v77990p</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> BR</span></div></div></a><a href="games/pou-v2000w0ppwwwpw/" class="app-card" data-title="GAMES"><div class="card-image-container"><img src="https://nixygaming.my.id/games/pou-v2000w0ppwwwpw/icon.jpg" alt="Pou v2000w0ppwwwpw"></div><div class="card-content"><div class="card-title-row"><h3>Pou v2000w0ppwwwpw</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v2000w0ppwwwpw</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Rac</span></div></div></a>
-                    <a href="games/delithe-last-memories-v132181/" class="app-card" data-title="GAMES"><div class="card-image-container"><img src="https://nixygaming.my.id/games/delithe-last-memories-v132181/icon.webp" alt="De:Lithe Last Memories v1.32.181"></div><div class="card-content"><div class="card-title-row"><h3>De:Lithe Last Memories v1.32.181</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v1.32.181</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Role Playing</span></div></div></a>
+                    <div class="app-list" id="update-games-list"><a href="mods/capcut-v22.4.4-mod-apk-pro-premium-unlocked/" class="app-card" data-title="MODS"><div class="card-image-container"><img src="https://modora.my.id/mods/capcut-v22.4.4-mod-apk-pro-premium-unlocked/icon.png" alt="CapCut v22.4.4 MOD APK (Pro, Premium Unlocked)"></div><div class="card-content"><div class="card-title-row"><h3>CapCut v22.4.4 MOD APK (Pro, Premium Unlocked)</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v22.4.4</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Video Players, Editors</span></div></div></a><a href="mods/terabox-v4.6.4-mod-apk-premium-unlocked/" class="app-card" data-title="MODS"><div class="card-image-container"><img src="https://modora.my.id/mods/terabox-v4.6.4-mod-apk-premium-unlocked/icon.png" alt="Terabox v4.6.4 MOD APK (Premium Unlocked)"></div><div class="card-content"><div class="card-title-row"><h3>Terabox v4.6.4 MOD APK (Premium Unlocked)</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v4.6.4</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Casual</span></div></div></a><a href="mods/rally-one-v1.63-mod-apk-unlimited-money-unlocked/" class="app-card" data-title="MODS"><div class="card-image-container"><img src="https://modora.my.id/mods/rally-one-v1.63-mod-apk-unlimited-money-unlocked/icon.jpg" alt="Rally ONE v1.63 MOD APK (Unlimited Money, Unlocked)"></div><div class="card-content"><div class="card-title-row"><h3>Rally ONE v1.63 MOD APK (Unlimited Money, Unlocked)</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v1.63</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Racing</span></div></div></a><a href="mods/mad-skills-motocross-3-v4.6.1-mod-apk-unlimited-money/" class="app-card" data-title="MODS"><div class="card-image-container"><img src="https://modora.my.id/mods/mad-skills-motocross-3-v4.6.1-mod-apk-unlimited-money/icon.jpg" alt="Mad Skills Motocross 3 v4.6.1 MOD APK (Unlimited Money)"></div><div class="card-content"><div class="card-title-row"><h3>Mad Skills Motocross 3 v4.6.1 MOD APK (Unlimited Money)</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v4.6.1</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Racing</span></div></div></a><a href="mods/camscanner-v7.3.1.2509240000-mod-apk-premium-unlocked/" class="app-card" data-title="MODS"><div class="card-image-container"><img src="https://modora.my.id/mods/camscanner-v7.3.1.2509240000-mod-apk-premium-unlocked/icon.png" alt="CamScanner v7.3.1.2509240000 MOD APK (Premium Unlocked)"></div><div class="card-content"><div class="card-title-row"><h3>CamScanner v7.3.1.2509240000 MOD APK (Premium Unlocked)</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v7.3.1.2509240000</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Productivity</span></div></div></a>
                     </div>
 
-                    <div class="section-header" id="blog-section" style="margin-top: 50px;">
-                        <div class="section-title-group">
-                            <span class="section-icon" style="background-color: #e5f7f0; color: #4fd18e;"><i class="fa-solid fa-file-alt"></i></span>
-                            <h2>Artikel Blog</h2>
-                        </div>
-                        <button class="view-all-btn">Lihat Semua</button>
-                    </div>
-                    <div class="blog-list app-list" id="blog-list">
-                        <a href="https://nixygaming.my.id/blog/heboh-7-game-android-viral-2025-yang-bikin-nagih-nomor-4-bikin-lupa-waktu.html" class="blog-post-item">Heboh! 7 Game Android Viral 2025 yang Bikin Nagih, Nomor 4 Bikin Lupa Waktu</a>
-                   </div>
                 </div>
             </div>
 
             <div id="common-sections">
-                <div class="categories-wrapper">
-                    <div class="category-grid-container" id="game-categories-grid"></div>
-                </div>
                 
                 <footer class="footer-container">
                     <div class="footer-links-grid">                                
-                        <a href="https://nixygaming.my.id/about/" class="footer-link">About</a>
-                        <a href="https://nixygaming.my.id/privacy-policy/" class="footer-link">Privacy</a>
-                        <a href="https://nixygaming.my.id/contact/" class="footer-link">Contact</a>
-                        <a href="https://nixygaming.my.id/sitemap/" class="footer-link">Sitemap</a>
+                        <a href="https://modora.my.id/about/" class="footer-link">About</a>
+                        <a href="https://modora.my.id/privacy-policy/" class="footer-link">Privacy</a>
+                        <a href="https://modora.my.id/contact/" class="footer-link">Contact</a>
+                        <a href="https://modora.my.id/sitemap/" class="footer-link">Sitemap</a>
                     </div>
                     <div class="footer-social-icons">
                         <a href="https://t.me/+JZVMFir6yM0yZmY1" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
@@ -712,9 +629,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // --- Deklarasi Elemen UI ---
     const homeContent = document.getElementById('home-content');
-    const categoryResultsContainer = document.getElementById('category-results-container');
-    const categoryResultsList = document.getElementById('category-results-list');
-    const categoryResultsTitle = document.getElementById('category-results-title');
     const menuToggle = document.getElementById('menu-toggle');
     const menuOverlay = document.getElementById('menu-overlay');
     const menuClose = document.getElementById('menu-close');
@@ -758,7 +672,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const showHomeContent = () => {
         homeContent.style.display = 'block';
-        categoryResultsContainer.style.display = 'none';
         mainSearchInput.value = '';
         menuSearchInput.value = '';
     };
@@ -804,61 +717,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
     
-    const showCategoryResults = (categoryName) => {
-        const allItems = document.querySelectorAll('#update-games-list .app-card');
-        homeContent.style.display = 'none';
-        categoryResultsContainer.style.display = 'block';
-        categoryResultsTitle.textContent = `Result: ${categoryName}`;
-        categoryResultsList.innerHTML = '';
-
-        const matchingItems = [];
-        allItems.forEach(card => {
-            const categoryElement = card.querySelectorAll('.card-details')[1];
-            if (categoryElement && categoryElement.textContent.replace('Category', '').trim() === categoryName) {
-                matchingItems.push(card);
-            }
-        });
-
-        const addedBaseNames = new Set();
-        matchingItems.forEach(item => {
-            const title = item.querySelector('h3').textContent;
-            const baseName = title.replace(/\s*v[\d\.]+.*$/i, '').trim();
-            if (!addedBaseNames.has(baseName)) {
-                categoryResultsList.appendChild(item.cloneNode(true));
-                addedBaseNames.add(baseName);
-            }
-        });
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-        if (menuOverlay.classList.contains('active')) toggleOverlay(menuOverlay, false);
-        if (searchOverlay.classList.contains('active')) toggleOverlay(searchOverlay, false);
-    };
-
-    const generateCategories = (sourceListSelector, targetGridSelector) => {
-        const sourceList = document.querySelector(sourceListSelector);
-        const targetGrid = document.querySelector(targetGridSelector);
-        if (!sourceList || !targetGrid) return;
-        const categories = new Set();
-        sourceList.querySelectorAll('.app-card').forEach(card => {
-            const categoryDetail = card.querySelectorAll('.card-details')[1];
-            if (categoryDetail) {
-                const categoryText = categoryDetail.textContent.replace('Category', '').trim();
-                if (categoryText) categories.add(categoryText);
-            }
-        });
-        targetGrid.innerHTML = '';
-        categories.forEach(category => {
-            const link = document.createElement('a');
-            link.className = 'category-button';
-            link.href = '#';
-            link.textContent = category;
-            link.addEventListener('click', e => {
-                e.preventDefault();
-                showCategoryResults(category);
-            });
-            targetGrid.appendChild(link);
-        });
-    };
-
     const populateNewUpdateSection = () => {
         const newUpdateList = document.getElementById('new-update-list');
         const gamesList = document.getElementById('update-games-list');
@@ -869,7 +727,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
     
     const animateCards = () => {
-        const cards = document.querySelectorAll('#home-content .app-card, #home-content .blog-post-item');
+        const cards = document.querySelectorAll('#home-content .app-card');
         cards.forEach((card, index) => {
             setTimeout(() => {
                 card.classList.add('card-anim');
@@ -880,7 +738,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const setCopyrightYear = () => {
         const copyrightElement = document.getElementById('copyright-year');
         if (copyrightElement) {
-            copyrightElement.innerHTML = `All Right Reserved Copyright © ${new Date().getFullYear()}`;
+            copyrightElement.innerHTML = `All Right Reserved Copyright © ${new Date().getFullYear()} MODORA`;
         }
     };
 
@@ -974,7 +832,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     searchClose.addEventListener('click', () => toggleOverlay(searchOverlay, false));
 
-    let currentTheme = localStorage.getItem('theme') || 'light';
+    let currentTheme = localStorage.getItem('theme') || 'dark';
     applyTheme(currentTheme);
     
     headerDarkModeToggle.addEventListener('click', toggleAndApplyTheme);
@@ -1002,10 +860,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- Menjalankan Fungsi Saat Halaman Dimuat ---
     setCopyrightYear();
     populateNewUpdateSection();
-    generateCategories('#update-games-list', '#game-categories-grid');
     animateCards();
 });
 </script>
 
 
-</body></html>
+</body>
+</html>
