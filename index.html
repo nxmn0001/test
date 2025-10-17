@@ -1,1118 +1,869 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
+<html lang="id"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Flixora - Dunia Hiburan</title>
-    <meta name="description" content="Flixora adalah platform streaming terbaik untuk nonton Donghua, anime, drakor, dracin, dan film bioskop terbaru dengan subtitle Indonesia.">
-    <meta name="keywords" content="Flixora, nonton anime, streaming anime, nonton donghua, drakor, dracin, film bioskop, anime sub indo, donghua sub indo, anime terbaru, streaming online, anime ongoing">
-
+    <title>MODORA - Download Aplikasi Premium &amp; Game Mod Apk</title>
     
     <link rel="icon" href="icon.png" type="image/png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#3B82F6">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+    <meta name="description" content="Temukan dan unduh ribuan aplikasi premium unlocked dan game mod apk terbaru, aman, dan gratis di MODORA. Tempat Upload Aplikasi premium unlocked dan Game Mod Apk.">
+    <meta name="keywords" content="download aplikasi premium, game mod apk, apk unlocked, modora, aplikasi mod">
+    <meta name="author" content="MODORA">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://modora.my.id/">
+    <meta property="og:title" content="MODORA - Aplikasi Premium &amp; Game Mod Apk">
+    <meta property="og:description" content="Portal terbaik untuk mencari dan mengunduh aplikasi premium dan game mod apk terbaru.">
+    <meta property="og:image" content="https://modora.my.id/modora.jpg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://modora.my.id/">
+    <meta property="twitter:title" content="MODORA - Aplikasi Premium &amp; Game Mod Apk">
+    <meta property="twitter:description" content="Portal terbaik untuk mencari dan mengunduh aplikasi premium dan game mod apk terbaru.">
+    <meta property="twitter:image" content="https://modora.my.id/modora.jpg">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "MODORA",
+      "url": "https://modora.my.id/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://modora.my.id/?s={search_term_string}"
+        },
+        "query-input": {
+          "@type": "PropertyValueSpecification",
+          "valueRequired": "http://schema.org/True",
+          "valueName": "search_term_string"
+        }
+      },
+      "mainEntity": {
+        "@type": "WebPage",
+        "hasPart": [
+          {"@type": "SiteNavigationElement", "name": "Games", "url": "https://modora.my.id/games/"}
+        ]
+      }
+    }
+    </script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&amp;display=swap" rel="stylesheet">
+
+    <style>
         :root {
-            --bg-color: #FFFFFF;
-            --surface-color: #F9FAFB;
-            --primary-text-color: #111827;
-            --secondary-text-color: #6B7280;
-            --border-color: #E5E7EB;
-            --accent-color: #3B82F6;
-            --accent-glow: rgba(59, 130, 246, 0.4);
-            --font-family: 'Manrope', sans-serif;
+            --bg-color: #f0f2f5;
+            --text-color: #2c3e50;
+            --text-color-light: #6c757d;
+            --card-bg: #ffffff;
+            --header-bg: #ffffff;
+            --shadow-color: rgba(0, 0, 0, 0.08);
+            --border-color: #e9e9e9;
+            --green-color: #28a745; 
+            --green-light-bg: #e9f6ec; 
+            --blue-color: #007bff; 
+            --red-color: #dc3545; 
+            --purple-color: #6f42c1; 
+            --yellow-color: #ffc107; 
+            --teal-color: #20c997; 
+            --orange-color: #fd7e14; 
+            --transition-smooth: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
 
         body.dark-mode {
-            --bg-color: #111827;
-            --surface-color: #1F2937;
-            --primary-text-color: #F9FAFB;
-            --secondary-text-color: #9CA3AF;
-            --border-color: #374151;
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --text-color-light: #a0a0a0;
+            --card-bg: #1e1e1e;
+            --header-bg: #1e1e1e;
+            --shadow-color: rgba(0, 0, 0, 0.4);
+            --border-color: #333;
+            --green-light-bg: #2c3e50;
         }
-
-        * { 
-            margin: 0; 
-            padding: 0; 
-            box-sizing: border-box; 
-            -webkit-tap-highlight-color: transparent;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
+        
+        html { scroll-behavior: smooth; }
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 
         body {
-            background-color: var(--surface-color);
-            color: var(--primary-text-color);
-            font-family: var(--font-family);
-            transition: background-color 0.3s ease, color 0.3s ease;
-            user-select: none;
-            -webkit-user-select: none;
-        }
-        
-        input, textarea {
-            user-select: auto;
-            -webkit-user-select: auto;
-        }
-        
-        img {
-            pointer-events: none;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-        
-        *:focus, *:focus-visible {
-            outline: none;
-        }
-        .action-button:focus-visible, .hero-btn:focus-visible {
-            box-shadow: 0 0 0 3px var(--accent-glow);
-        }
-        #search-input:focus {
-             border-color: var(--accent-color);
-             box-shadow: 0 0 0 3px var(--accent-glow);
-        }
-        .request-btn:focus-visible, .thumbnail-card:focus-visible {
-            box-shadow: 0 0 0 3px var(--accent-glow);
-        }
-
-        .main-header {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--bg-color);
-            border-bottom: 1px solid var(--border-color);
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 999;
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
         }
 
-        .navbar {
-            display: flex;
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px 15px; }
+
+        /* Header */
+        header {
+            background-color: var(--header-bg);
+            box-shadow: 0 2px 4px var(--shadow-color);
+            padding: 10px 15px;
+            display: flex; 
+            justify-content: space-between; 
             align-items: center;
-            justify-content: space-between;
-            position: relative;
-            height: 42px; 
+            position: sticky; top: 0; z-index: 998;
         }
-        
-        .header-main-view, .header-search-view {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s ease;
-            background-color: var(--bg-color);
-        }
-        
-        .logo { font-size: 1.8rem; font-weight: 800; text-decoration: none; color: var(--primary-text-color); flex-shrink: 0; }
-        .logo span { color: var(--accent-color); }
-        
-        .nav-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
-        .action-button { display: flex; align-items: center; justify-content: center; cursor: pointer; background: none; border: none; border-radius: 50%; padding: 5px; color: var(--primary-text-color); }
-
-        .desktop-nav { display: none; }
-        @media (min-width: 992px) {
-            .desktop-nav { display: block; margin: 0 auto; } 
-            .mobile-menu-toggle { display: none !important; } 
-        }
-
-        .nav-menu { list-style: none; display: flex; gap: 30px; align-items: center; }
-        .nav-item { position: relative; }
-        .nav-link { text-decoration: none; color: var(--secondary-text-color); font-weight: 600; font-size: 1rem; padding: 10px 5px; transition: color 0.2s ease; display: flex; align-items: center; gap: 5px; }
-        .nav-link:hover { color: var(--primary-text-color); }
-        .dropdown { position: absolute; top: 120%; left: 50%; transform: translateX(-50%); width: 200px; background-color: var(--bg-color); border: 1px solid var(--border-color); border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); padding: 10px; list-style: none; opacity: 0; visibility: hidden; transition: all 0.2s ease; }
-        .nav-item:hover .dropdown { opacity: 1; visibility: visible; }
-        .dropdown-item a { display: block; padding: 12px 15px; text-decoration: none; color: var(--secondary-text-color); font-weight: 500; border-radius: 8px; transition: all 0.2s; }
-        .dropdown-item a:hover { background-color: var(--surface-color); color: var(--primary-text-color); }
-
-        .header-search-view {
-            transform: scale(1.1);
-            opacity: 0;
-            pointer-events: none;
-            gap: 15px;
-        }
-
-        #search-input { width: 100%; flex-grow: 1; padding: 10px 15px; font-size: 1rem; border-radius: 25px; border: 1px solid var(--border-color); background-color: var(--surface-color); color: var(--primary-text-color); }
-        
-        .navbar.search-active .header-main-view { transform: scale(0.9); opacity: 0; pointer-events: none; }
-        .navbar.search-active .header-search-view { transform: scale(1); opacity: 1; pointer-events: auto; }
-
-        .mobile-nav { 
-            display: none; 
-            position: absolute; 
-            top: calc(100% + 1px);
-            left: 0; 
-            width: 100%;
-            background-color: var(--bg-color); 
-            border-bottom: 1px solid var(--border-color); 
-            padding: 0;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.05);
-        }
-        .mobile-nav.active { display: block; }
-        .mobile-nav .nav-menu { flex-direction: column; gap: 0; }
-        .mobile-nav .nav-item { width: 100%; }
-        .mobile-nav .nav-link { 
-            color: var(--secondary-text-color); 
-            font-weight: 600; 
-            padding: 20px 5%;
-            width: 100%; 
-            display: block; 
-            border-bottom: 1px solid var(--border-color);
-        }
-         .mobile-nav .nav-item:last-child .nav-link { border-bottom: none; }
-
-        main { padding: 40px 0; }
-
-        .hero-section {
-            text-align: center;
-            padding: 60px 0;
-            margin-bottom: 40px;
-        }
-        
-        .hero-banner {
-            max-width: 450px;
-            width: 100%;
-            height: auto;
-            border-radius: 12px;
-            margin-bottom: 30px;
-        }
-
-        .hero-title {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 15px;
-            color: var(--primary-text-color);
-        }
-        .hero-title span {
-            color: var(--accent-color);
-        }
-        .hero-description {
-            font-size: 1.1rem;
-            color: var(--secondary-text-color);
-            max-width: 600px;
-            margin: 0 auto 30px auto;
-        }
-        .hero-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-        .hero-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 12px 28px;
-            font-size: 1rem;
-            font-weight: 600;
-            border-radius: 50px;
+        .header-logo a {
             text-decoration: none;
-            transition: all 0.2s ease;
-            border: none;
-            cursor: pointer;
-            white-space: nowrap;
         }
-        .hero-btn.primary {
-            background-color: var(--accent-color);
-            color: white;
+        .logo-text {
+            font-family: 'Russo One', sans-serif;
+            font-size: 1.6em;
+            letter-spacing: 0.5px;
         }
-        .hero-btn.primary:hover {
-            background-color: #2563EB;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px var(--accent-glow);
-        }
-        .hero-btn.secondary {
-            background-color: var(--surface-color);
-            color: var(--primary-text-color);
-            border: 1px solid var(--border-color);
-        }
-        .hero-btn.secondary:hover {
-            background-color: var(--border-color);
-        }
-
-        @media (max-width: 768px) {
-            .hero-title { font-size: 2rem; }
-            .hero-section { padding: 40px 0; }
-        }
-
-        @media (max-width: 480px) {
-            .hero-btn {
-                padding: 10px 16px;
-                font-size: 0.9rem; 
-                gap: 6px;
-            }
-        }
+        .logo-nixy { color: var(--blue-color); }
+        .logo-gaming { color: var(--red-color); }
         
-        /* --- STYLE BANNER BARU --- */
-        .slider-section {
-            margin-bottom: 60px;
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
+        .header-btn {
+            background: none; border: none;
+            font-size: 1.4em;
+            color: var(--text-color-light);
+            cursor: pointer;
+            padding: 5px;
+            width: 34px;
+            height: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header-btn:hover { color: var(--text-color); }
+
+        /* Overlay */
+        .overlay {
+            position: fixed; top: 0; left: 0;
+            width: 100%; height: 100vh;
+            background-color: var(--bg-color);
+            z-index: 1000;
+            opacity: 0; visibility: hidden;
+            transition: var(--transition-smooth);
+            overflow-y: auto;
+        }
+        .overlay.active { opacity: 1; visibility: visible; }
+        
+        #menu-overlay { transform: translateX(100%); }
+        #menu-overlay.active { transform: translateX(0); }
+        .overlay-header { display: flex; align-items: center; padding: 15px; border-bottom: 1px solid var(--border-color); }
+        .overlay-close-btn { font-size: 1.8em; margin-left: auto; color: var(--text-color-light); background: none; border: none; cursor: pointer; padding: 5px;}
+        .overlay-close-btn:hover { color: var(--text-color); }
+
+        .menu-search-box { padding: 15px; }
+        .menu-search-box input {
+            width: 100%; padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px; font-size: 1em;
+            background-color: var(--card-bg);
+            color: var(--text-color);
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            padding: 0 15px;
+            margin-top: 15px;
+        }
+        .menu-grid-item {
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            padding: 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            gap: 10px;
+            cursor: pointer;
+            border: none;
+            font-size: 1em;
+            transition: transform 0.2s;
+        }
+        .menu-grid-item:hover { transform: translateY(-3px); }
+        .menu-grid-item i { font-size: 2em; }
+        .menu-grid-item.home { background-color: var(--blue-color); }
+        .menu-grid-item.games { background-color: var(--red-color); }
+        .menu-grid-item.faq { background-color: var(--teal-color); }
+        .menu-grid-item.dark-mode { background-color: var(--orange-color); }
+        .menu-grid-item.telegram-bg { background-color: #0088cc; }
+        .menu-grid-item.whatsapp-bg { background-color: #25D366; }
+
+        /* Search Overlay */
+        #search-overlay { transform: translateY(-100%); }
+        #search-overlay.active { transform: translateY(0); }
+        #search-overlay .overlay-header { border-bottom: none; }
+        #search-overlay .search-input-wrapper { 
+            display: flex; align-items: center; 
+            background-color: var(--card-bg);
+            border-radius: 50px;
+            padding: 8px 15px;
+            flex-grow: 1; 
+            margin-right: 15px;
+            box-shadow: 0 2px 5px var(--shadow-color);
+        }
+        #search-overlay .search-input-wrapper i {
+            font-size: 1.2em;
+            color: var(--text-color-light); 
+            margin-right: 10px;
+        }
+        #search-overlay input {
+            width: 100%; border: none; background: none;
+            font-size: 1em; padding: 0;
+            color: var(--text-color);
+        }
+        #search-overlay input:placeholder {
+            color: var(--text-color-light);
+            opacity: 0.7;
+        }
+        #search-overlay input:focus { outline: none; }
+
+        .search-content { padding: 15px; }
+
+        /* Banner Slider */
         .slider-container {
             position: relative;
-            overflow: hidden;
+            width: 100%;
             border-radius: 16px;
-            cursor: grab;
+            overflow: hidden;
+            box-shadow: 0 4px 12px var(--shadow-color);
+            margin-bottom: 25px;
         }
         .slider-wrapper {
             display: flex;
-            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .slide {
-            flex: 1 0 100%;
+            min-width: 100%;
+            box-sizing: border-box;
             position: relative;
+            display: block;
+            text-decoration: none;
+        }
+        .slide img {
+            width: 100%;
+            display: block;
             aspect-ratio: 16 / 9;
-            background-size: cover;
-            background-position: center;
-            color: #FFFFFF;
+            object-fit: cover;
+            filter: blur(50px);
+        }
+        .slide-title-container {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px 75px;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 0 70px;
             text-align: center;
-            text-decoration: none; /* Tambahan untuk tag <a> */
-        }
-        .slide::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: inherit;
-            background-size: cover;
-            background-position: center;
-            filter: blur(5px) brightness(0.6);
-            z-index: 1;
-            transition: filter 0.3s ease; /* Transisi hover */
-        }
-        .slide:hover::before {
-             filter: blur(2px) brightness(0.7); /* Efek hover */
         }
         .slide-title {
-            position: relative;
-            z-index: 2;
-            font-size: 2.5rem;
-            font-weight: 800;
-            padding: 0px;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.7);
+            color: white;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+            white-space: normal;
         }
         .slider-btn {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            z-index: 10;
             background-color: rgba(0, 0, 0, 0.4);
             color: white;
             border: none;
             border-radius: 50%;
-            width: 44px;
-            height: 44px;
-            font-size: 1.2rem;
             cursor: pointer;
+            z-index: 10;
+            font-size: 1.2em;
+            width: 45px;
+            height: 45px;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: background-color 0.2s ease;
+            transition: background-color 0.2s;
         }
         .slider-btn:hover {
             background-color: rgba(0, 0, 0, 0.7);
         }
-        .slider-btn.prev-btn {
+        .prev-btn {
             left: 15px;
         }
-        .slider-btn.next-btn {
+        .next-btn {
             right: 15px;
         }
-        @media (max-width: 768px) {
-            .slide-title { font-size: 1.8rem; }
-            .slider-btn { width: 38px; height: 38px; font-size: 1rem; }
-        }
-        @media (max-width: 480px) {
-            .slide-title { font-size: 1.2rem; }
-        }
-        /* --- AKHIR STYLE BANNER BARU --- */
-        
-        #donghua-section, #random-section, #rekomendasi-section {
-             scroll-margin-top: 90px;
-        }
 
-        .section-title-wrapper {
+        /* Konten Utama */
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 0;
+            scroll-margin-top: 70px; 
+        }
+        .app-list + .section-header {
+             margin-top: 50px;
+        }
+        .section-title-group {
             display: flex;
             align-items: center;
-            text-align: center;
-            margin: 60px 0 25px 0;
+            gap: 10px;
         }
-        
-         #search-results-container .section-title-wrapper {
-         margin-top: 0px;    
-         margin-bottom: 30px;
-          }
-        .section-title-wrapper::before,
-        .section-title-wrapper::after {
-            content: '';
-            flex: 1;
-            border-bottom: 2px solid var(--border-color);
-        }
-        .section-title-wrapper h2 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            padding: 0 20px;
-            color: var(--primary-text-color);
-        }
-        
-        .section-description {
-            text-align: center;
-            color: var(--secondary-text-color);
-            margin: -15px auto 30px auto;
-            font-size: 0.9rem;
-            max-width: 500px;
-        }
-        
-        .content-grid { 
-            display: grid; 
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1rem;
-            position: relative; /* Diperlukan untuk no-content-message */
-            min-height: 50px; /* Memberi tinggi minimum agar pesan terlihat */
-        }
-        @media (min-width: 768px) { .content-grid { grid-template-columns: repeat(4, 1fr); gap: 1.5rem; } }
-        @media (min-width: 1024px) { .content-grid { grid-template-columns: repeat(6, 1fr); } }
-        
-        .no-content-message {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: var(--secondary-text-color);
-            font-style: italic;
-        }
-
-        .thumbnail-card { background-color: var(--bg-color); border-radius: 12px; overflow: hidden; position: relative; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease; }
-        .thumbnail-card:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(0,0,0,0.1); z-index: 10; cursor: pointer; }
-
-        .thumbnail-image {
-            width: 100%;
-            aspect-ratio: 3 / 4;
-            object-fit: cover;
-            display: block;
-            filter: blur(0px);
-            transition: filter 0.3s ease-in-out;
-        }
-        .thumbnail-card:hover .thumbnail-image {
-            filter: blur(0);
-        }
-
-        .card-overlay { position: absolute; bottom: 0; left: 0; width: 100%; padding: 2.5rem 1rem 1rem 1rem; background: linear-gradient(0deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%); pointer-events: none; }
-        .card-title { font-size: 0.7rem; font-weight: 700; color: #FFFFFF; }
-        
-        #no-results-message { 
-            display: none; 
-            text-align: center; 
-            padding: 50px 0; 
-            color: var(--secondary-text-color);
-            grid-column: 1 / -1;
-        }
-        #no-results-message p { margin: 10px 0 20px 0; }
-        
-        .request-btn { display: inline-block; background-color: var(--accent-color); color: white; border: none; padding: 12px 25px; font-size: 1rem; font-weight: 600; border-radius: 25px; cursor: pointer; transition: background-color 0.2s; text-decoration: none; }
-        .request-btn:hover { background-color: #2563EB; }
-
-        .load-more-container {
-            text-align: center;
-            margin-top: 40px;
-        }
-        .load-more-btn {
-            background-color: var(--surface-color);
-            border: 1px solid var(--border-color);
-            color: var(--primary-text-color);
-            padding: 12px 30px;
-            font-size: 1rem;
-            font-weight: 600;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-        .load-more-btn:hover {
-            background-color: var(--border-color);
-        }
-        .load-more-btn:focus-visible {
-             box-shadow: 0 0 0 3px var(--accent-glow);
-        }
-
-        #scroll-to-top-btn {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background-color: var(--accent-color);
-            color: white;
-            border: none;
-            width: 50px;
-            height: 50px;
+        .section-icon {
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f7e6e5;
             border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            color: #d1564f;
+            font-size: 1.2em;
+        }
+        .section-header h2 {
+            font-size: 1.4em;
+            color: var(--text-color);
+        }
+        .view-all-btn {
+            background-color: var(--blue-color);
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9em;
+            transition: background-color 0.2s;
             cursor: pointer;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            border: none;
+        }
+        .view-all-btn:hover { background-color: #0069d9; }
+
+        .request-btn {
+            background-color: var(--blue-color);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 15px;
+            transition: background-color 0.2s;
+        }
+        .request-btn:hover {
+             background-color: #218838;
+        }
+        
+        .app-list { display: grid; gap: 15px; }
+        .app-card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 12px;
+            box-shadow: 0 4px 12px var(--shadow-color);
+            display: flex;
+            gap: 15px;
+            transition: var(--transition-smooth);
+            align-items: flex-start;
+            text-decoration: none;
             opacity: 0;
-            visibility: hidden;
-            transform: translateY(20px);
-            transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
-            z-index: 1000;
         }
-        #scroll-to-top-btn.visible {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
-
-        .main-footer {
-            padding: 40px 0 20px 0;
-            text-align: center;
-            font-size: 0.9rem;
-            color: var(--secondary-text-color);
-            border-top: 1px solid var(--border-color);
-            margin-top: 40px;
-        }
-
-        #adblock-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.85);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            z-index: 99999;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            color: #FFFFFF;
-            text-align: center;
-            padding: 20px;
-        }
-        .adblock-modal {
-            max-width: 450px;
-        }
-        .adblock-icon {
+        .app-card:hover { transform: translateY(-3px); box-shadow: 0 6px 16px var(--shadow-color); }
+        
+        .card-image-container {
+            position: relative;
+            flex-shrink: 0;
             width: 80px;
             height: 80px;
-            stroke-width: 1.5;
+        }
+        .card-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+            display: block;
+        }
+        .card-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .card-title-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .card-title-row h3 {
+            font-size: 1.05em;
+            font-weight: 600;
+            margin: 0;
+            line-height: 1.3;
+            color: var(--text-color);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 180px;
+        }
+        .card-details {
+            font-size: 0.8em;
+            color: var(--text-color-light);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            line-height: 1.4;
+        }
+        .card-details span strong::after {
+            content: ":";
+            margin-left: 2px;
+        }
+
+        :not(.results-list).app-list .app-card:nth-child(n + 6) {
+            display: none;
+        }
+        .app-list.show-all .app-card {
+            display: flex !important;
+        }
+
+        .results-list .app-card:nth-child(n + 101) {
+            display: none;
+        }
+        
+        .footer-container {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 4px 12px var(--shadow-color);
+            margin-top: 50px;
+        }
+        .footer-links-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
             margin-bottom: 20px;
-            color: #F87171;
         }
-        .adblock-modal h2 {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-        .adblock-modal p {
-            font-size: 1.1rem;
-            color: #E5E7EB;
-            line-height: 1.6;
-        }
-
-        /* --- Style Notifikasi Offline --- */
-        .offline-notification {
-            position: fixed; /* Tetap di layar meskipun di-scroll */
-            bottom: -100px; /* Posisi awal, tersembunyi di bawah layar */
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #2c3e50; /* Warna gelap yang netral */
-            color: white;
-            padding: 14px 22px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            z-index: 10000; /* Pastikan selalu di paling atas */
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: bottom 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Animasi muncul */
-        }
-
-        .offline-notification.visible {
-            bottom: 20px; /* Posisi saat terlihat */
-        }
-        /* Tambahkan ini di mana saja di dalam tag <style> Anda */
         .footer-link {
-           display: block;
-           margin-top: 10px;
-           color: var(--secondary-text-color);
-           text-decoration: none;
-           transition: color 0.2s ease;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding: 8px;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 0.8em;
+            font-weight: 500;
+            transition: var(--transition-smooth);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         .footer-link:hover {
-          color: var(--accent-color);
+            background-color: var(--blue-color);
+            color: white;
+        }
+        .footer-social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 20px 0;
+            border-top: 1px solid var(--border-color);
+        }
+        .footer-social-icons a {
+            color: var(--text-color-light);
+            font-size: 1.5em;
+            transition: var(--transition-smooth);
+        }
+        .footer-social-icons a:hover {
+            color: var(--blue-color);
+            transform: scale(1.1);
+        }
+        .footer-copyright {
+            text-align: center;
+            font-size: 0.8em;
+            color: var(--text-color-light);
+            padding-top: 15px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .card-anim {
+            animation: fadeInUp 0.5s ease-out forwards;
+        }
+         body {
+            padding-top: 0 !important;
+        }
+
+        header {
+            top: var(--anchor-ad-top-offset, 0px);
+        }
+        .card-details strong i {
+            margin-right: 5px;
         }
     </style>
 </head>
 <body>
 
-    <div id="adblock-overlay">
-        <div class="adblock-modal">
-            <i data-lucide="shield-off" class="adblock-icon"></i>
-            <h2>AdBlock Terdeteksi</h2>
-            <p>Situs ini didukung oleh iklan. Mohon matikan pemblokir iklan Anda untuk melanjutkan.</p>
+    <header>
+        <div class="header-logo">
+            <a href="/"><span class="logo-text"><span class="logo-nixy">MOD</span><span class="logo-gaming">ORA</span></span></a>
         </div>
-    </div>
-
-    <script src="https://unpkg.com/lucide@latest"></script>
-
-    <header class="main-header">
-        <div class="container">
-            <div class="navbar" id="navbar">
-                <div class="header-main-view">
-                    <div class="logo">Flix<span>ora</span></div>
-                    <nav class="desktop-nav">
-                        <ul class="nav-menu">
-                            <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Browse <i data-lucide="chevron-down" style="width:16px;"></i></a>
-                                <ul class="dropdown">
-                                    <li class="dropdown-item"><a href="#">Anime</a></li>
-                                    <li class="dropdown-item"><a href="#">Donghua</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a href="#" class="nav-link">My List</a></li>
-                        </ul>
-                    </nav>
-                    <div class="nav-right">
-                        <a href="#" target="_blank" class="action-button" aria-label="Join Telegram"><i data-lucide="send"></i></a>
-                        <button class="action-button" id="theme-toggle-btn" aria-label="Toggle Theme">
-                            <i class="icon-sun" data-lucide="sun"></i>
-                            <i class="icon-moon" data-lucide="moon" style="display: none;"></i>
-                        </button>
-                        <button class="action-button" id="search-open-btn" aria-label="Open Search"><i data-lucide="search"></i></button>
-                        <button class="action-button mobile-menu-toggle" aria-label="Open Menu"><i data-lucide="menu"></i></button>
-                    </div>
-                </div>
-                <div class="header-search-view">
-                    <button class="action-button" id="search-close-btn" aria-label="Close Search"><i data-lucide="arrow-left"></i></button>
-                    <input type="text" id="search-input" placeholder="Cari judul anime atau donghua...">
-                </div>
-            </div>
-        </div>
-        <div class="mobile-nav" id="mobile-menu">
-             <ul class="nav-menu">
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Anime</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Donghua</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">My List</a></li>
-            </ul>
+        <div class="header-right">
+            <button id="header-dark-mode-toggle" class="header-btn" aria-label="Ganti Tema">
+                <i class="fa-solid fa-sun"></i>
+            </button>
+            <button id="search-toggle" class="header-btn" aria-label="Buka Pencarian">
+                <i class="fa-solid fa-search"></i>
+            </button>
+            <button id="menu-toggle" class="header-btn" aria-label="Buka Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </header>
 
+    <div id="menu-overlay" class="overlay">
+        <div class="overlay-header">
+            <a href="/" style="text-decoration:none;"><span class="logo-text" style="font-size: 1.8em;"><span class="logo-nixy">MOD</span><span class="logo-gaming">ORA</span></span></a>
+            <button id="menu-close" class="overlay-close-btn" aria-label="Tutup Menu"><i class="fa-solid fa-times"></i></button>
+        </div>
+        <div class="menu-search-box">
+            <input type="search" id="menu-search-input" placeholder="Cari aplikasi &amp; game...">
+        </div>
+        <div class="menu-grid">
+            <a href="/" class="menu-grid-item home"><i class="fa-solid fa-home"></i><span>Home</span></a>
+            <a href="https://modora.my.id/games/" class="menu-grid-item games"><i class="fa-solid fa-gamepad"></i><span>Games</span></a>
+            <a href="/faq.html" class="menu-grid-item faq"><i class="fa fa-question-circle"></i><span>FAQ</span></a>
+            <button id="dark-mode-toggle" class="menu-grid-item dark-mode">
+                <i class="fa-solid fa-sun"></i><span>Dark Mode</span>
+            </button>
+            <a href="https://t.me/+JZVMFir6yM0yZmY1" class="menu-grid-item telegram-bg">
+                <i class="fab fa-telegram-plane"></i>
+                <span>Telegram</span>
+            </a>
+        </div>
+    </div>
+
+    <div id="search-overlay" class="overlay">
+        <div class="overlay-header">
+            <div class="search-input-wrapper">
+                <i class="fa-solid fa-search"></i>
+                <input type="search" id="search-input" placeholder="Cari aplikasi, game, dan lainnya">
+            </div>
+            <button id="search-close" class="overlay-close-btn" aria-label="Tutup Pencarian"><i class="fa-solid fa-times"></i></button>
+        </div>
+        <div class="search-content">
+            <div id="overlay-search-results" class="app-list results-list"></div>
+            <div id="overlay-no-results" style="display: none; text-align: center; padding: 20px;">
+                <p><i class="fa-solid fa-ghost"></i> <b>Tidak ada hasil</b></p>
+                <a href="request.html" class="request-btn">Request mods</a>
+            </div>
+        </div>
+    </div>
+
     <main>
         <div class="container">
-            <section class="hero-section">
-                
-                <img src="https://flixora.my.id/flixora.png" alt="Flixora Banner" class="hero-banner">
-
-                <h1 class="hero-title">Dunia Hiburan di Flix<span>ora</span></h1>
-                <p class="hero-description">Jelajahi ribuan judul Donghua, anime, drakor, dracin, dan film bioskop subtitle Indonesia terlengkap, dari yang terbaru hingga yang klasik.</p>
-                
-                <div class="hero-buttons">
-                    <a href="https://t.me/+jbwkTntNvak1MzM1" target="_blank" class="hero-btn secondary">
-                        <i data-lucide="send"></i>
-                        Gabung Telegram
-                    </a>
-                    <a href="#donghua-section" class="hero-btn primary">
-                        <i data-lucide="play"></i>
-                        Mulai Nonton
-                    </a>
-                </div>
-            </section>
-            
-            <section class="slider-section">
-                <div class="slider-container">
-                    <div class="slider-wrapper">
-                    	<a href="donghua/tales-of-herding-gods/" class="slide" style="background-image: url('donghua/tales-of-herding-gods/gambar.jpg');">
-                            <h2 class="slide-title">Tales of Herding Gods</h2>
-                        </a>
-                        <a href="donghua/battle-through-the-heavens-s5/" class="slide" style="background-image: url('donghua/battle-through-the-heavens-s5/gambar.jpg');">
-                            <h2 class="slide-title">Battle Through The Heavens S5</h2>
-                        </a>
-                        <a href="donghua/renegade-immortal-xian-ni/" class="slide" style="background-image: url('donghua/renegade-immortal-xian-ni/gambar.jpg');">
-                            <h2 class="slide-title">Renegade Immortal (Xian Ni)</h2>
-                        </a>
+            <div id="dynamic-content-wrapper">
+                <div id="home-content">
+                    <div class="slider-container">
+                        <div class="slider-wrapper"></div>
+                        <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
                     </div>
-                    <button class="slider-btn prev-btn" aria-label="Previous Slide"><i class="fas fa-chevron-left"></i></button>
-                    <button class="slider-btn next-btn" aria-label="Next Slide"><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </section>
 
-            <section id="rekomendasi-section">
-                <div class="section-title-wrapper">
-                    <h2>REKOMENDASI</h2>
-                </div>
-                <div class="content-grid" id="rekomendasi-grid">
+                    <div class="section-header" id="new-update-section">
+                        <div class="section-title-group">
+                            <span class="section-icon" style="background-color: #f7f2e5; color: #d1b84f;"><i class="fa-solid fa-star"></i></span>
+                            <h2>New Update</h2>
+                        </div>
                     </div>
-            </section>
-            
-            <section id="donghua-section">
-                <div class="section-title-wrapper">
-                    <h2>DONGHUA</h2>
-                </div>
-                <div class="content-grid" id="donghua-grid">
-               </div>
-               <div class="load-more-container" id="load-more-donghua-container">
-                    <button class="load-more-btn" id="load-more-donghua-btn">Lihat Lainnya</button>
-                </div>
-            </section>
-            
-            <section id="random-section">
-                <div class="section-title-wrapper">
-                    <h2>ANDRAFIBI</h2>
-                </div>
-                <p class="section-description">Anime, drakor, dracin, dan film bioskop tersedia di Flixora. Gunakan fitur pencarian untuk menemukan judul yang Anda inginkan. Jika hasil pencarian tidak ditemukan, tombol request akan otomatis muncul agar Anda dapat mengajukan permintaan.</p>
-                <div class="content-grid" id="random-grid">
-                       </div>
-               <div class="load-more-container" id="load-more-random-container">
-                    <button class="load-more-btn" id="load-more-random-btn">Lihat Lainnya</button>
-                </div>
-            </section>
-            <div id="search-results-container" style="display: none;">
-                 <div class="section-title-wrapper">
-                    <h2>Hasil Pencarian</h2>
-                </div>
-                <div class="content-grid" id="search-grid"></div>
-                <div id="no-results-message">
-                    <h3>Tidak ada hasil yang ditemukan</h3>
-                    <p>Tidak dapat menemukan yang Anda cari?</p>
-                    <a href="request" class="request-btn">Request Konten</a>
+                    <div class="app-list" id="new-update-list"></div>
+                    
+                    <div class="section-header" id="games-section">
+                        <div class="section-title-group">
+                            <span class="section-icon"><i class="fa-solid fa-gamepad"></i></span>
+                            <h2>Apps &amp; Games</h2>
+                        </div>
+                        <button class="view-all-btn">Lihat Semua</button>
+                    </div>
+                    <div class="app-list" id="update-games-list"><a href="mods/shotcut-ai-v2.18.3-mod-apk-premium-unlocked/" class="app-card" data-title="MODS"><div class="card-image-container"><img src="https://modora.my.id/mods/shotcut-ai-v2.18.3-mod-apk-premium-unlocked/icon.webp" alt="ShotCut AI v2.18.3 MOD APK [Premium Unlocked]"></div><div class="card-content"><div class="card-title-row"><h3>ShotCut AI v2.18.3 MOD APK [Premium Unlocked]</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v2.18.3</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Casual</span></div></div></a><a href="mods/expressvpn-v12.33.0-mod-apk-premium-unlimited-trial/" class="app-card" data-title="MODS"><div class="card-image-container"><img src="https://modora.my.id/mods/expressvpn-v12.33.0-mod-apk-premium-unlimited-trial/icon.png" alt="ExpressVPN v12.33.0 MOD APK (Premium, Unlimited Trial)"></div><div class="card-content"><div class="card-title-row"><h3>ExpressVPN v12.33.0 MOD APK (Premium, Unlimited Trial)</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v12.33.0</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Educational</span></div></div></a><a href="mods/capcut-v22.4.4-mod-apk-pro-premium-unlocked/" class="app-card" data-title="MODS"><div class="card-image-container"><img src="https://modora.my.id/mods/capcut-v22.4.4-mod-apk-pro-premium-unlocked/icon.png" alt="CapCut v22.4.4 MOD APK (Pro, Premium Unlocked)"></div><div class="card-content"><div class="card-title-row"><h3>CapCut v22.4.4 MOD APK (Pro, Premium Unlocked)</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v22.4.4</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Video Players, Editors</span></div></div></a><a href="mods/terabox-v4.6.4-mod-apk-premium-unlocked/" class="app-card" data-title="MODS"><div class="card-image-container"><img src="https://modora.my.id/mods/terabox-v4.6.4-mod-apk-premium-unlocked/icon.png" alt="Terabox v4.6.4 MOD APK (Premium Unlocked)"></div><div class="card-content"><div class="card-title-row"><h3>Terabox v4.6.4 MOD APK (Premium Unlocked)</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v4.6.4</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Casual</span></div></div></a><a href="mods/rally-one-v1.63-mod-apk-unlimited-money-unlocked/" class="app-card" data-title="MODS"><div class="card-image-container"><img src="https://modora.my.id/mods/rally-one-v1.63-mod-apk-unlimited-money-unlocked/icon.jpg" alt="Rally ONE v1.63 MOD APK (Unlimited Money, Unlocked)"></div><div class="card-content"><div class="card-title-row"><h3>Rally ONE v1.63 MOD APK (Unlimited Money, Unlocked)</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v1.63</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Racing</span></div></div></a><a href="mods/mad-skills-motocross-3-v4.6.1-mod-apk-unlimited-money/" class="app-card" data-title="MODS"><div class="card-image-container"><img src="https://modora.my.id/mods/mad-skills-motocross-3-v4.6.1-mod-apk-unlimited-money/icon.jpg" alt="Mad Skills Motocross 3 v4.6.1 MOD APK (Unlimited Money)"></div><div class="card-content"><div class="card-title-row"><h3>Mad Skills Motocross 3 v4.6.1 MOD APK (Unlimited Money)</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v4.6.1</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Racing</span></div></div></a><a href="mods/camscanner-v7.3.1.2509240000-mod-apk-premium-unlocked/" class="app-card" data-title="MODS"><div class="card-image-container"><img src="https://modora.my.id/mods/camscanner-v7.3.1.2509240000-mod-apk-premium-unlocked/icon.png" alt="CamScanner v7.3.1.2509240000 MOD APK (Premium Unlocked)"></div><div class="card-content"><div class="card-title-row"><h3>CamScanner v7.3.1.2509240000 MOD APK (Premium Unlocked)</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v7.3.1.2509240000</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Productivity</span></div></div></a>
+                    </div>
+
                 </div>
             </div>
 
-            <div id="card-database" style="display: none;">
-                            <div class="thumbnail-card" data-title="Hshsjsj" data-category="donghua"><a href="donghua/hshsjsj/"><img src="donghua/hshsjsj/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Hshsjsj</h3></div></div>
-                            <div class="thumbnail-card" data-title="Soul Land : Movie Sword of Dust" data-category="donghua"><a href="donghua/soul-land-movie-sword-of-dust/"><img src="donghua/soul-land-movie-sword-of-dust/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Soul Land : Movie Sword of Dust</h3></div></div>
-                            <div class="thumbnail-card" data-title="Eclipse of Illusion" data-category="donghua"><a href="donghua/eclipse-of-illusion/"><img src="donghua/eclipse-of-illusion/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Eclipse of Illusion</h3></div></div>
-                            <div class="thumbnail-card" data-title="Kekkon Yubiwa Monogatari Season 2 Subtitle Indonesia" data-category="random"><a href="random/kekkon-yubiwa-monogatari-season-2-subtitle-indonesia/"><img src="random/kekkon-yubiwa-monogatari-season-2-subtitle-indonesia/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Kekkon Yubiwa Monogatari Season 2 Subtitle Indonesia</h3></div></div>
-                            <div class="thumbnail-card" data-title="Shen Yin Wangzuo Movie: Yi Lai Ke Si Chuanqi Episode 1 Subtitle Indonesia" data-category="random"><a href="donghua/shen-yin-wangzuo-movie-yi-lai-ke-si-chuanqi-episode-1-subtitle-indonesia/"><img src="donghua/shen-yin-wangzuo-movie-yi-lai-ke-si-chuanqi-episode-1-subtitle-indonesia/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Shen Yin Wangzuo Movie: Yi Lai Ke Si Chuanqi Episode 1 Subtitle Indonesia</h3></div></div>
-                            <div class="thumbnail-card" data-title="Kimetsu no Yaiba Movie 1: Mugenjou-hen – Akaza Sairai 1 HDCAM Subtitle Indonesia" data-category="random"><a href="donghua/kimetsu-no-yaiba-movie-1-mugenjou-hen-akaza-sairai-1-hdcam-subtitle-indonesia/"><img src="donghua/kimetsu-no-yaiba-movie-1-mugenjou-hen-akaza-sairai-1-hdcam-subtitle-indonesia/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Kimetsu no Yaiba Movie 1: Mugenjou-hen – Akaza Sairai 1 HDCAM Subtitle Indonesia</h3></div></div>
-                            <div class="thumbnail-card" data-title="Nageki no Bourei wa Intai shitai Part 2 Subtitle Indonesia" data-category="random"><a href="donghua/nageki-no-bourei-wa-intai-shitai-part-2-subtitle-indonesia/"><img src="donghua/nageki-no-bourei-wa-intai-shitai-part-2-subtitle-indonesia/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Nageki no Bourei wa Intai shitai Part 2 Subtitle Indonesia</h3></div></div>
-                            <div class="thumbnail-card" data-title="Gnosia Subtitle Indonesia" data-category="random"><a href="random/gnosia-subtitle-indonesia/"><img src="random/gnosia-subtitle-indonesia/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Gnosia Subtitle Indonesia</h3></div></div>
-                            <div class="thumbnail-card" data-title="I am the Blade" data-category="donghua"><a href="donghua/i-am-the-blade/"><img src="donghua/i-am-the-blade/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">I am the Blade</h3></div></div>
-                            <div class="thumbnail-card" data-title="The Divine Emperor of Destiny" data-category="donghua"><a href="donghua/the-divine-emperor-of-destiny/"><img src="donghua/the-divine-emperor-of-destiny/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">The Divine Emperor of Destiny</h3></div></div>
-                            <div class="thumbnail-card" data-title="Shattering the Galaxy" data-category="donghua"><a href="donghua/shattering-the-galaxy/"><img src="donghua/shattering-the-galaxy/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Shattering the Galaxy</h3></div></div>
-                            <div class="thumbnail-card" data-title="Smurfs (2025)" data-category="random"><a href="donghua/smurfs-2025/"><img src="donghua/smurfs-2025/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Smurfs (2025)</h3></div></div>
-                            <div class="thumbnail-card" data-title="Dangerous Affair (2024)" data-category="random"><a href="donghua/dangerous-affair-2024/"><img src="donghua/dangerous-affair-2024/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Dangerous Affair (2024)</h3></div></div>
-                            <div class="thumbnail-card" data-title="Relentless Fury (2025)" data-category="random"><a href="donghua/relentless-fury-2025/"><img src="donghua/relentless-fury-2025/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Relentless Fury (2025)</h3></div></div>
-                            <div class="thumbnail-card" data-title="Tomb of Fallen Gods Season 3" data-category="donghua"><a href="donghua/tomb-of-fallen-gods-season-3/"><img src="donghua/tomb-of-fallen-gods-season-3/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Tomb of Fallen Gods Season 3</h3></div></div>
-                            <div class="thumbnail-card" data-title="Recycling Scrap in the Celestial Court" data-category="donghua"><a href="donghua/recycling-scrap-in-the-celestial-court/"><img src="donghua/recycling-scrap-in-the-celestial-court/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Recycling Scrap in the Celestial Court</h3></div></div>
-                            <div class="thumbnail-card" data-title="SOUND of LOVE (2024)" data-category="random"><a href="random/sound-of-love-2024/"><img src="random/sound-of-love-2024/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">SOUND of LOVE (2024)</h3></div></div>
-                            <div class="thumbnail-card" data-title="Montauk (2025)" data-category="random"><a href="random/montauk-2025/"><img src="random/montauk-2025/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Montauk (2025)</h3></div></div>
-                            <div class="thumbnail-card" data-title="Horror Express (2025)" data-category="random"><a href="random/horror-express-2025/"><img src="random/horror-express-2025/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Horror Express (2025)</h3></div></div>
-                            <div class="thumbnail-card" data-title="Lilim (2025)" data-category="random"><a href="random/lilim-2025/"><img src="random/lilim-2025/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Lilim (2025)</h3></div></div>
-                            <div class="thumbnail-card" data-title="Manidhargal (2025)" data-category="random"><a href="random/manidhargal-2025/"><img src="random/manidhargal-2025/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Manidhargal (2025)</h3></div></div>
-                            <div class="thumbnail-card" data-title="Maalikaya (2025)" data-category="random"><a href="random/maalikaya-2025/"><img src="random/maalikaya-2025/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Maalikaya (2025)</h3></div></div>
-                            <div class="thumbnail-card" data-title="Creation of the Gods II: Demon Force (2025)" data-category="random"><a href="random/creation-of-the-gods-ii-demon-force-2025/"><img src="random/creation-of-the-gods-ii-demon-force-2025/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Creation of the Gods II: Demon Force (2025)</h3></div></div>
-                            <div class="thumbnail-card" data-title="Ne Zha 2 (2025)" data-category="random"><a href="random/ne-zha-2-2025/"><img src="random/ne-zha-2-2025/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Ne Zha 2 (2025)</h3></div></div>
-                            <div class="thumbnail-card" data-title="Witch Hunter (2024)" data-category="random"><a href="random/witch-hunter-2024/"><img src="random/witch-hunter-2024/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Witch Hunter (2024)</h3></div></div>
-                            <div class="thumbnail-card" data-title="The Ritual (2025)" data-category="random"><a href="random/the-ritual-2025/"><img src="random/the-ritual-2025/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">The Ritual (2025)</h3></div></div>
-                            <div class="thumbnail-card" data-title="No Address (2025)" data-category="random"><a href="random/no-address-2025/"><img src="random/no-address-2025/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">No Address (2025)</h3></div></div>
-                            <div class="thumbnail-card" data-title="Wall to Wall (2025)" data-category="random"><a href="random/wall-to-wall-2025/"><img src="random/wall-to-wall-2025/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Wall to Wall (2025)</h3></div></div>
-                            <div class="thumbnail-card" data-title="Foreign Exchange (2025)" data-category="random"><a href="random/foreign-exchange-2025/"><img src="random/foreign-exchange-2025/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Foreign Exchange (2025)</h3></div></div>
-                            <div class="thumbnail-card" data-title="If I Run (2025)" data-category="random"><a href="random/if-i-run-2025/"><img src="random/if-i-run-2025/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">If I Run (2025)</h3></div></div>
-                            <div class="thumbnail-card" data-title="Americana (2025)" data-category="random"><a href="random/americana-2025/"><img src="random/americana-2025/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Americana (2025)</h3></div></div>
-                            <div class="thumbnail-card" data-title="Just Breathe (2025)" data-category="random"><a href="random/just-breathe-2025/"><img src="random/just-breathe-2025/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Just Breathe (2025)</h3></div></div>
-                            <div class="thumbnail-card" data-title="Bury Me When I’m Dead (2025)" data-category="random"><a href="random/bury-me-when-im-dead-2025/"><img src="random/bury-me-when-im-dead-2025/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Bury Me When I’m Dead (2025)</h3></div></div>
-                            <div class="thumbnail-card" data-title="Anaconda (2024)" data-category="random"><a href="random/anaconda-2024/"><img src="random/anaconda-2024/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Anaconda (2024)</h3></div></div>
-                            <div class="thumbnail-card" data-title="Rape Zombie: Lust of the Dead 3 (2013)" data-category="random"><a href="random/rape-zombie-lust-of-the-dead-3-2013/"><img src="random/rape-zombie-lust-of-the-dead-3-2013/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Rape Zombie: Lust of the Dead 3 (2013)</h3></div></div>
-                            <div class="thumbnail-card" data-title="Aghathiyaa (2025)" data-category="random"><a href="random/aghathiyaa-2025/"><img src="random/aghathiyaa-2025/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Aghathiyaa (2025)</h3></div></div>
-                            <div class="thumbnail-card" data-title="Stolen Girl (2025)" data-category="random"><a href="random/stolen-girl-2025/"><img src="random/stolen-girl-2025/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Stolen Girl (2025)</h3></div></div>
-                            <div class="thumbnail-card" data-title="Renegade Immortal Movie: Battle Of The Gods" data-category="donghua"><a href="donghua/renegade-immortal-movie-battle-of-the-gods/"><img src="donghua/renegade-immortal-movie-battle-of-the-gods/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Renegade Immortal Movie: Battle Of The Gods</h3></div></div>
-                            <div class="thumbnail-card" data-title="V/H/S/HALLOWEEN (2025)" data-category="random"><a href="random/vhshalloween-2025/"><img src="random/vhshalloween-2025/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">V/H/S/HALLOWEEN (2025)</h3></div></div>
-                            <div class="thumbnail-card" data-title="Self Driver (2024)" data-category="random"><a href="random/self-driver-2024/"><img src="random/self-driver-2024/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Self Driver (2024)</h3></div></div>
-                <div class="thumbnail-card" data-title="Maadeva (2025)" data-category="random"><a href="random/maadeva-2025/"><img src="random/maadeva-2025/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Maadeva (2025)</h3></div></div>
-                <div class="thumbnail-card" data-title="Who Am I (2025)" data-category="random"><a href="random/who-am-i-2025/"><img src="random/who-am-i-2025/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Who Am I (2025)</h3></div></div>
-                <div class="thumbnail-card" data-title="London Calling (2025)" data-category="random"><a href="random/london-calling-2025/"><img src="random/london-calling-2025/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">London Calling (2025)</h3></div></div>
-                <div class="thumbnail-card" data-title="Ballerina Assassin (2025)" data-category="random"><a href="random/ballerina-assassin-2025/"><img src="random/ballerina-assassin-2025/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Ballerina Assassin (2025)</h3></div></div>
-                <div class="thumbnail-card" data-title="Akujiki Reijou to Kyouketsu Koushaku Subtitle Indonesia" data-category="donghua"><a href="donghua/akujiki-reijou-to-kyouketsu-koushaku-subtitle-indonesia/"><img src="donghua/akujiki-reijou-to-kyouketsu-koushaku-subtitle-indonesia/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Akujiki Reijou to Kyouketsu Koushaku Subtitle Indonesia</h3></div></div>
-                <div class="thumbnail-card" data-title="Shrouding Heavens" data-category="donghua"><a href="donghua/shrouding-heavens/"><img src="donghua/shrouding-heavens/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Shrouding Heavens</h3></div></div>
-                <div class="thumbnail-card" data-title="Part-time College Student (2025)" data-category="random"><a href="random/part-time-college-student-2025/"><img src="random/part-time-college-student-2025/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Part-time College Student (2025)</h3></div></div>
-                <div class="thumbnail-card" data-title="Punishment Classroom (2008)" data-category="random"><a href="random/punishment-classroom-2008/"><img src="random/punishment-classroom-2008/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Punishment Classroom (2008)</h3></div></div>
-                <div class="thumbnail-card" data-title="Juedai Shuang Jiao: Subtitle Indonesia" data-category="donghua"><a href="donghua/juedai-shuang-jiao-subtitle-indonesia/"><img src="donghua/juedai-shuang-jiao-subtitle-indonesia/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Juedai Shuang Jiao: Subtitle Indonesia</h3></div></div>
-                <div class="thumbnail-card" data-title="battle through the heavens S5" data-category="donghua"><a href="donghua/battle-through-the-heavens-s5/"><img src="donghua/battle-through-the-heavens-s5/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">battle through the heavens S5</h3></div></div>
-                <div class="thumbnail-card" data-title="Tales of Herding Gods" data-category="donghua"><a href="donghua/tales-of-herding-gods/"><img src="donghua/tales-of-herding-gods/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Tales of Herding Gods</h3></div></div>
-                <div class="thumbnail-card" data-title="Renegade Immortal (Xian Ni)" data-category="donghua"><a href="donghua/renegade-immortal-xian-ni/"><img src="donghua/renegade-immortal-xian-ni/gambar.jpg" alt="Flixora" class="thumbnail-image"></a><div class="card-overlay"><h3 class="card-title">Renegade Immortal (Xian Ni)</h3></div></div>
+            <div id="common-sections">
+                
+                <footer class="footer-container">
+                    <div class="footer-links-grid">                                
+                        <a href="https://modora.my.id/about/" class="footer-link">About</a>
+                        <a href="https://modora.my.id/privacy-policy/" class="footer-link">Privacy</a>
+                        <a href="https://modora.my.id/contact/" class="footer-link">Contact</a>
+                        <a href="https://modora.my.id/sitemap/" class="footer-link">Sitemap</a>
+                    </div>
+                    <div class="footer-social-icons">
+                        <a href="https://t.me/+JZVMFir6yM0yZmY1" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="/" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="/" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="footer-copyright" id="copyright-year">
+                    </div>
+                </footer>
             </div>
-
         </div>
     </main>
-    
-    <footer class="main-footer">
-     <div class="container">
-         <p>&copy; <span id="copyright-year"></span> <span id="copyright-name"></span>. All Rights Reserved.</p>
-         
-         <a href="statistik.html" class="footer-link">Statistik Pengguna Online</a>
-         
-     </div>
-    </footer>
 
-    <button id="scroll-to-top-btn" aria-label="Scroll to top">
-        <i data-lucide="arrow-up"></i>
-    </button>
-    
-    <div id="offline-notification" class="offline-notification">
-        <i class="fas fa-wifi"></i> Anda sedang offline.
-    </div>
-    
     <script>
-        lucide.createIcons();
+document.addEventListener('DOMContentLoaded', function() {
+    // --- Deklarasi Elemen UI ---
+    const homeContent = document.getElementById('home-content');
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuOverlay = document.getElementById('menu-overlay');
+    const menuClose = document.getElementById('menu-close');
+    const searchToggle = document.getElementById('search-toggle');
+    const searchOverlay = document.getElementById('search-overlay');
+    const searchClose = document.getElementById('search-close');
+    const mainSearchInput = document.getElementById('search-input');
+    const menuSearchInput = document.getElementById('menu-search-input');
+    const allViewAllButtons = document.querySelectorAll('.view-all-btn');
+    const headerLogoLink = document.querySelector('.header-logo a');
+    
+    const headerDarkModeToggle = document.getElementById('header-dark-mode-toggle');
+    const headerDarkModeIcon = headerDarkModeToggle.querySelector('i');
+    const menuDarkModeToggle = document.getElementById('dark-mode-toggle');
+    const menuDarkModeIcon = menuDarkModeToggle.querySelector('i');
+    
+    const overlaySearchResults = document.getElementById('overlay-search-results');
+    const overlayNoResults = document.getElementById('overlay-no-results');
+
+    // --- Fungsi-Fungsi Utama ---
+
+    const toggleOverlay = (overlay, isActive) => {
+        overlay.classList.toggle('active', isActive);
+        document.body.style.overflow = isActive ? 'hidden' : '';
+    };
+
+    const applyTheme = (theme) => {
+        document.body.classList.toggle('dark-mode', theme === 'dark');
+        // PERBAIKAN: Logika ikon dibalik agar sesuai
+        // Jika tema gelap, tunjukkan ikon BULAN. Jika terang, tunjukkan MATAHARI.
+        const iconClass = theme === 'dark' ? 'fa-solid fa-moon' : 'fa-solid fa-sun';
+        if(headerDarkModeIcon) headerDarkModeIcon.className = iconClass;
+        if(menuDarkModeIcon) menuDarkModeIcon.className = iconClass;
+    };
+    
+    const toggleAndApplyTheme = () => {
+        const newTheme = document.body.classList.contains('dark-mode') ? 'light' : 'dark';
+        applyTheme(newTheme);
+        localStorage.setItem('theme', newTheme);
+    };
+
+    const showHomeContent = () => {
+        homeContent.style.display = 'block';
+        mainSearchInput.value = '';
+        menuSearchInput.value = '';
+    };
+
+    const executeSearch = (query) => {
+        const searchTerm = query.toLowerCase().trim();
         
-        document.addEventListener('DOMContentLoaded', () => {
-            
-            /*
-            if ('serviceWorker' in navigator) {
-                window.addEventListener('load', () => {
-                    navigator.serviceWorker.register('/sw.js')
-                        .then(registration => {
-                            console.log('Service Worker berhasil didaftarkan:', registration);
-                        })
-                        .catch(error => {
-                            console.log('Pendaftaran Service Worker gagal:', error);
-                        });
-                });
+        if (!searchTerm) {
+            overlaySearchResults.innerHTML = '';
+            overlayNoResults.style.display = 'none';
+            return;
+        }
+
+        const allItems = document.querySelectorAll('#update-games-list .app-card');
+        
+        const matchingGames = [];
+        allItems.forEach(card => {
+            const title = card.querySelector('h3').textContent.toLowerCase();
+            const categoryElement = card.querySelectorAll('.card-details')[1];
+            const categoryText = categoryElement ? categoryElement.textContent.toLowerCase() : '';
+            if (title.includes(searchTerm) || categoryText.includes(searchTerm)) {
+                matchingGames.push(card);
             }
-            */
-
-            // --- Deklarasi Variabel Global ---
-            const navbar = document.getElementById('navbar');
-            const searchInput = document.getElementById('search-input');
-            const searchOpenBtn = document.getElementById('search-open-btn');
-            const searchCloseBtn = document.getElementById('search-close-btn');
-            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const themeToggleBtn = document.getElementById('theme-toggle-btn');
-            const sunIcon = themeToggleBtn.querySelector('.icon-sun');
-            const moonIcon = themeToggleBtn.querySelector('.icon-moon');
-            const yearSpan = document.getElementById('copyright-year');
-            const nameSpan = document.getElementById('copyright-name');
-            const logoName = document.querySelector('.logo').textContent;
-            const scrollToTopBtn = document.getElementById('scroll-to-top-btn');
-            const heroSection = document.querySelector('.hero-section');
-            const adBlockOverlay = document.getElementById('adblock-overlay');
-            
-            // --- Variabel Konten ---
-            const allCardElements = Array.from(document.querySelectorAll('#card-database .thumbnail-card'));
-            const searchResultsContainer = document.getElementById('search-results-container');
-            const searchGrid = document.getElementById('search-grid');
-            const noResultsMessage = document.getElementById('no-results-message');
-
-            // --- FUNGSI BARU: Mengacak urutan array (Fisher-Yates Shuffle) ---
-            const shuffleArray = (array) => {
-                let currentIndex = array.length, randomIndex;
-                // Selama masih ada elemen untuk diacak
-                while (currentIndex !== 0) {
-                    // Ambil elemen yang tersisa
-                    randomIndex = Math.floor(Math.random() * currentIndex);
-                    currentIndex--;
-                    // Dan tukar dengan elemen saat ini
-                    [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
-                }
-                return array;
-            };
-
-            // --- PERSIAPAN KARTU UNTUK SETIAP SECTION ---
-            const donghuaCards = allCardElements.filter(card => card.dataset.category === 'donghua');
-            const shuffledDonghuaCards = shuffleArray([...donghuaCards]); // Buat salinan yg diacak
-            const rekomendasiCards = shuffledDonghuaCards.slice(0, 12); // Ambil 12 pertama dari yg sudah diacak
-
-            const sections = {
-                rekomendasi: {
-                    sectionEl: document.getElementById('rekomendasi-section'),
-                    gridEl: document.getElementById('rekomendasi-grid'),
-                    loadMoreBtn: null, // Tidak ada tombol "Lihat Lainnya"
-                    loadMoreContainer: null,
-                    cards: rekomendasiCards,
-                    visibleCount: 12 // Tampilkan semua 12
-                },
-                donghua: {
-                    sectionEl: document.getElementById('donghua-section'),
-                    gridEl: document.getElementById('donghua-grid'),
-                    loadMoreBtn: document.getElementById('load-more-donghua-btn'),
-                    loadMoreContainer: document.getElementById('load-more-donghua-container'),
-                    cards: donghuaCards, // Gunakan list donghua yg asli (tidak diacak)
-                    visibleCount: 12
-                },
-                random: {
-                    sectionEl: document.getElementById('random-section'),
-                    gridEl: document.getElementById('random-grid'),
-                    loadMoreBtn: document.getElementById('load-more-random-btn'),
-                    loadMoreContainer: document.getElementById('load-more-random-container'),
-                    cards: allCardElements.filter(card => card.dataset.category === 'random'),
-                    visibleCount: 60
-                }
-            };
-            
-            // --- Fitur Keamanan ---
-            document.addEventListener('contextmenu', event => event.preventDefault());
-
-            let isAdBlockerDetected = false;
-            const showAdBlockerMessage = () => {
-                if (isAdBlockerDetected) return; 
-                isAdBlockerDetected = true;
-                adBlockOverlay.style.display = 'flex';
-                document.body.style.overflow = 'hidden';
-            };
-            
-            const checkAdBlock = () => {
-                // Skrip Adblock hanya berjalan saat online
-                if (navigator.onLine) {
-                    fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' }))
-                    .catch(err => { showAdBlockerMessage(); });
-                    
-                    const bait = document.createElement('div');
-                    bait.innerHTML = '&nbsp;';
-                    bait.className = 'ad adsbox banner-ad text-ad ad-container';
-                    bait.style.cssText = 'position:absolute; left:-9999px; height:1px; width:1px; visibility:hidden; pointer-events:none;';
-                    document.body.appendChild(bait);
-                    requestAnimationFrame(() => {
-                        if (bait.offsetHeight === 0 || bait.offsetParent === null) { showAdBlockerMessage(); }
-                        if(document.body.contains(bait)) { document.body.removeChild(bait); }
-                    });
-                }
-            };
-            checkAdBlock();
-
-            // --- FUNGSI BANNER SLIDER BARU ---
-            const sliderContainer = document.querySelector('.slider-container');
-            if (sliderContainer) {
-                const sliderWrapper = sliderContainer.querySelector('.slider-wrapper');
-                const slides = sliderWrapper.querySelectorAll('.slide');
-                const prevBtn = sliderContainer.querySelector('.prev-btn');
-                const nextBtn = sliderContainer.querySelector('.next-btn');
-                const slideCount = slides.length;
-
-                let currentIndex = 0;
-                let isDragging = false;
-                let startPos = 0;
-                let currentTranslate = 0;
-                let prevTranslate = 0;
-                let animationID;
-
-                if (slideCount <= 1) {
-                    prevBtn.style.display = 'none';
-                    nextBtn.style.display = 'none';
-                }
-
-                const getPositionX = (event) => event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
-                const setSliderPosition = () => sliderWrapper.style.transform = `translateX(${currentTranslate}px)`;
-                
-                const dragStart = (e) => {
-                    isDragging = true;
-                    startPos = getPositionX(e);
-                    sliderWrapper.style.transition = 'none';
-                    animationID = requestAnimationFrame(animation);
-                };
-                
-                const dragMove = (e) => {
-                    if (isDragging) {
-                        const currentPosition = getPositionX(e);
-                        currentTranslate = prevTranslate + currentPosition - startPos;
-                    }
-                };
-
-                const dragEnd = (e) => {
-                    const movedBy = currentTranslate - prevTranslate;
-                    if (Math.abs(movedBy) > 5) {
-                        e.preventDefault();
-                    }
-
-                    isDragging = false;
-                    cancelAnimationFrame(animationID);
-                    sliderContainer.style.cursor = 'grab';
-
-                    if (movedBy < -100 && currentIndex < slideCount - 1) currentIndex++;
-                    if (movedBy > 100 && currentIndex > 0) currentIndex--;
-
-                    goToSlide(currentIndex);
-                };
-                
-                function animation() {
-                    setSliderPosition();
-                    if (isDragging) requestAnimationFrame(animation);
-                }
-                
-                function goToSlide(index) {
-                    sliderWrapper.style.transition = 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
-                    currentTranslate = index * -sliderContainer.clientWidth;
-                    prevTranslate = currentTranslate;
-                    setSliderPosition();
-                }
-
-                nextBtn.addEventListener('click', () => {
-                    currentIndex = (currentIndex + 1) % slideCount;
-                    goToSlide(currentIndex);
-                });
-
-                prevBtn.addEventListener('click', () => {
-                    currentIndex = (currentIndex - 1 + slideCount) % slideCount;
-                    goToSlide(currentIndex);
-                });
-
-                sliderContainer.addEventListener('mousedown', dragStart);
-                sliderContainer.addEventListener('touchstart', dragStart, { passive: true });
-                sliderContainer.addEventListener('mousemove', dragMove);
-                sliderContainer.addEventListener('touchmove', dragMove, { passive: true });
-                sliderContainer.addEventListener('mouseup', dragEnd);
-                sliderContainer.addEventListener('touchend', dragEnd);
-                sliderContainer.addEventListener('mouseleave', () => { if (isDragging) dragEnd(); });
-                sliderContainer.addEventListener('click', dragEnd, true);
-                
-                window.addEventListener('resize', () => goToSlide(currentIndex));
-            }
-            // --- AKHIR FUNGSI BANNER SLIDER BARU ---
-
-            // --- Fungsi Inti ---
-
-            const renderCards = (gridEl, cards, count) => {
-                gridEl.innerHTML = '';
-                if (cards.length === 0) {
-                     gridEl.innerHTML = '<p class="no-content-message">Comingsoon 𓂂ɞ̴̶̷ ₃ ɞ̴̶̷𓂂</p>';
-                       return;
-                }
-                cards.slice(0, count).forEach(card => {
-                    gridEl.appendChild(card.cloneNode(true));
-                });
-            };
-            
-            const manageSection = (category) => {
-                const s = sections[category];
-                renderCards(s.gridEl, s.cards, s.visibleCount);
-
-                // Hanya tampilkan tombol "Lihat Lainnya" jika ada
-                if (s.loadMoreContainer) {
-                    if (s.visibleCount >= s.cards.length || s.cards.length === 0) {
-                        s.loadMoreContainer.style.display = 'none';
-                    } else {
-                        s.loadMoreContainer.style.display = 'block';
-                    }
-                }
-            };
-
-            const manageLayout = () => {
-                const query = searchInput.value.toLowerCase().trim();
-                const bannerSection = document.querySelector('.slider-section');
-                
-                if (query) {
-                    heroSection.style.display = 'none';
-                    if (bannerSection) bannerSection.style.display = 'none';
-                    Object.values(sections).forEach(s => {
-                        s.sectionEl.style.display = 'none';
-                        if (s.loadMoreContainer) s.loadMoreContainer.style.display = 'none';
-                    });
-                    searchResultsContainer.style.display = 'block';
-                    const filteredCards = allCardElements.filter(card => 
-                        card.dataset.title.toLowerCase().includes(query)
-                    );
-                    renderCards(searchGrid, filteredCards, filteredCards.length);
-                    noResultsMessage.style.display = filteredCards.length === 0 ? 'block' : 'none';
-                } else {
-                    heroSection.style.display = 'block';
-                    if (bannerSection) bannerSection.style.display = 'block';
-                    searchResultsContainer.style.display = 'none';
-                    Object.keys(sections).forEach(cat => {
-                         sections[cat].sectionEl.style.display = 'block';
-                         manageSection(cat);
-                    });
-                }
-            };
-
-            const initializePage = () => {
-                 Object.keys(sections).forEach(manageSection);
-                 manageLayout();
-            };
-
-            // --- Event Listeners ---
-
-            Object.keys(sections).forEach(cat => {
-                const s = sections[cat];
-                // Hanya tambahkan event listener jika tombolnya ada
-                if (s.loadMoreBtn) {
-                    s.loadMoreBtn.addEventListener('click', () => {
-                        s.visibleCount += 6;
-                        manageSection(cat);
-                    });
-                }
-            });
-
-            searchInput.addEventListener('input', manageLayout);
-
-            yearSpan.textContent = new Date().getFullYear();
-            nameSpan.textContent = logoName;
-
-            const applyTheme = (theme) => {
-                if (theme === 'dark') {
-                    document.body.classList.add('dark-mode');
-                    sunIcon.style.display = 'none';
-                    moonIcon.style.display = 'block';
-                } else {
-                    document.body.classList.remove('dark-mode');
-                    sunIcon.style.display = 'block';
-                    moonIcon.style.display = 'none';
-                }
-            };
-            const savedTheme = localStorage.getItem('theme') || 'dark';
-            applyTheme(savedTheme);
-            themeToggleBtn.addEventListener('click', () => {
-                const currentTheme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
-                const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-                applyTheme(newTheme);
-                localStorage.setItem('theme', newTheme);
-            });
-
-            searchOpenBtn.addEventListener('click', () => {
-                 navbar.classList.add('search-active');
-                 searchInput.focus();
-            });
-            searchCloseBtn.addEventListener('click', () => {
-                navbar.classList.remove('search-active');
-                searchInput.value = '';
-                manageLayout(); 
-            });
-
-            mobileMenuToggle.addEventListener('click', () => mobileMenu.classList.toggle('active'));
-            
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 400) {
-                    scrollToTopBtn.classList.add('visible');
-                } else {
-                    scrollToTopBtn.classList.remove('visible');
-                }
-            });
-            scrollToTopBtn.addEventListener('click', () => {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-            
-            // --- LOGIKA NOTIFIKASI OFFLINE BARU ---
-            const offlineNotif = document.getElementById('offline-notification');
-
-            const showOfflineNotification = () => {
-                if (offlineNotif) offlineNotif.classList.add('visible');
-            };
-
-            const hideOfflineNotification = () => {
-                if (offlineNotif) offlineNotif.classList.remove('visible');
-            };
-
-            if (!navigator.onLine) {
-                showOfflineNotification();
-            }
-
-            window.addEventListener('offline', showOfflineNotification);
-            window.addEventListener('online', hideOfflineNotification);
-            // --- AKHIR LOGIKA NOTIFIKASI OFFLINE ---
-            
-            initializePage();
         });
-    </script>
-</body>
-</html>
+        
+        overlaySearchResults.innerHTML = '';
+
+        if (matchingGames.length > 0) {
+            const addedGameBaseNames = new Set();
+            matchingGames.forEach(item => {
+                const title = item.querySelector('h3').textContent;
+                const baseName = title.replace(/\s*v[\d\.]+.*$/i, '').trim();
+                if (!addedGameBaseNames.has(baseName)) {
+                    const clonedCard = item.cloneNode(true);
+                    clonedCard.style.opacity = 1;
+                    overlaySearchResults.appendChild(clonedCard);
+                    addedGameBaseNames.add(baseName);
+                }
+            });
+            overlayNoResults.style.display = 'none';
+        } else {
+            overlayNoResults.style.display = 'block';
+        }
+    };
+    
+    const populateNewUpdateSection = () => {
+        const newUpdateList = document.getElementById('new-update-list');
+        const gamesList = document.getElementById('update-games-list');
+        if (!newUpdateList || !gamesList) return;
+        
+        const latestGames = Array.from(gamesList.querySelectorAll('.app-card')).slice(0, 5);
+        latestGames.forEach(game => newUpdateList.appendChild(game.cloneNode(true)));
+    };
+    
+    const animateCards = () => {
+        const cards = document.querySelectorAll('#home-content .app-card');
+        cards.forEach((card, index) => {
+            setTimeout(() => {
+                card.classList.add('card-anim');
+            }, index * 80);
+        });
+    };
+    
+    const setCopyrightYear = () => {
+        const copyrightElement = document.getElementById('copyright-year');
+        if (copyrightElement) {
+            copyrightElement.innerHTML = `All Right Reserved Copyright © ${new Date().getFullYear()} MODORA`;
+        }
+    };
+
+    const populateBannerSlider = () => {
+        const sliderWrapper = document.querySelector('.slider-wrapper');
+        const gameCards = Array.from(document.querySelectorAll('#update-games-list .app-card'));
+
+        if (!sliderWrapper || gameCards.length === 0) return;
+
+        for (let i = gameCards.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [gameCards[i], gameCards[j]] = [gameCards[j], gameCards[i]];
+        }
+
+        const selectedCards = gameCards.slice(0, 10);
+
+        let slidesHTML = '';
+        selectedCards.forEach(card => {
+            const postUrl = card.getAttribute('href');
+            const imageElement = card.querySelector('.card-image-container img');
+            if (!imageElement) return;
+            const imageUrl = imageElement.getAttribute('src');
+            const gameTitle = card.querySelector('h3').textContent;
+            
+            slidesHTML += `
+                <a href="${postUrl}" class="slide">
+                    <img src="${imageUrl}" alt="Banner for ${gameTitle}" loading="lazy">
+                    <div class="slide-title-container">
+                        <h3 class="slide-title">${gameTitle}</h3>
+                    </div>
+                </a>
+            `;
+        });
+
+        sliderWrapper.innerHTML = slidesHTML;
+    };
+
+    // --- Inisialisasi & Event Listeners ---
+    
+    populateBannerSlider();
+
+    const sliderContainer = document.querySelector('.slider-container');
+    if (sliderContainer) {
+        const sliderWrapper = document.querySelector('.slider-wrapper');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+        const slides = document.querySelectorAll('.slide');
+        
+        if (slides.length > 0) {
+            const totalSlides = slides.length;
+            let currentIndex = Math.floor(Math.random() * totalSlides);
+            let slideInterval;
+
+            const updateSliderPosition = () => {
+                sliderWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+            };
+            const nextSlide = () => {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateSliderPosition();
+            };
+            const prevSlide = () => {
+                currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                updateSliderPosition();
+            };
+            const startAutoSlide = () => {
+                slideInterval = setInterval(nextSlide, 5000);
+            };
+            const resetAutoSlide = () => {
+                clearInterval(slideInterval);
+                startAutoSlide();
+            };
+
+            nextBtn.addEventListener('click', (e) => { e.preventDefault(); nextSlide(); resetAutoSlide(); });
+            prevBtn.addEventListener('click', (e) => { e.preventDefault(); prevSlide(); resetAutoSlide(); });
+
+            sliderWrapper.style.transition = 'none'; 
+            updateSliderPosition(); 
+            setTimeout(() => {
+                sliderWrapper.style.transition = 'transform 0.5s ease-in-out';
+            }, 50);
+
+            startAutoSlide();
+        }
+    }
+
+    menuToggle.addEventListener('click', () => toggleOverlay(menuOverlay, true));
+    menuClose.addEventListener('click', () => toggleOverlay(menuOverlay, false));
+    searchToggle.addEventListener('click', () => {
+        toggleOverlay(searchOverlay, true);
+        mainSearchInput.focus();
+    });
+    searchClose.addEventListener('click', () => toggleOverlay(searchOverlay, false));
+
+    let currentTheme = localStorage.getItem('theme') || 'dark';
+    applyTheme(currentTheme);
+    
+    headerDarkModeToggle.addEventListener('click', toggleAndApplyTheme);
+    menuDarkModeToggle.addEventListener('click', toggleAndApplyTheme);
+
+    mainSearchInput.addEventListener('input', e => executeSearch(e.target.value));
+    menuSearchInput.addEventListener('input', e => executeSearch(e.target.value));
+    
+    allViewAllButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const listContainer = this.parentElement.nextElementSibling;
+            if (listContainer) {
+                listContainer.classList.add('show-all');
+                this.style.display = 'none'; 
+            }
+        });
+    });
+
+    headerLogoLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        showHomeContent();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // --- Menjalankan Fungsi Saat Halaman Dimuat ---
+    setCopyrightYear();
+    populateNewUpdateSection();
+    animateCards();
+});
+</script>
+
+
+
+</body></html>
